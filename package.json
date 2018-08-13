@@ -1,0 +1,23 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "## Target 1. I want to play with react or other framework as fast as posible",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkvim/react-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkvim/react-playground/issues"
+  },
+  "homepage": "https://github.com/jkvim/react-playground#readme",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
