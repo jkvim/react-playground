@@ -4,7 +4,7 @@
   "description": "## Target 1. I want to play with react or other framework as fast as posible",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo 'Hello World'"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,14 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "husky": "^1.0.0-rc.13"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./scripts/pre-commit.sh",
+      "commit-msg": "./scripts/commit-msg.sh $HUSKY_GIT_PARAMS"
+    }
   }
 }

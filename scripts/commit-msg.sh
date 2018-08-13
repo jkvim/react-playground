@@ -1,0 +1,3 @@
+COMMIT_MESSAGE=$(cat $1)
+
+echo $COMMIT_MESSAGE
