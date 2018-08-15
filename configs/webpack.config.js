@@ -9,6 +9,14 @@ const getPath = (filePath) => path.resolve(ROOT_PATH, filePath)
 module.exports = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
   entry: getPath('./src/index.js'),
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
   plugins: [
     new HTMLWebpackPlugin({
       template: getPath('./index.html'),
