@@ -8,12 +8,14 @@ const getPath = (filePath) => path.resolve(ROOT_PATH, filePath)
 
 module.exports = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
-  entry: getPath('./src/index.js'),
+  devtool: 'inline-source-map',
+  entry: getPath('./src/index.tsx'),
   module: {
     rules: [
       {
-        test: /\.js$/,
-        loader: 'babel-loader',
+        test: /\.tsx$/,
+        use: ['source-map-loader', 'ts-loader'],
+        exclude: /node_modules/,
       },
     ],
   },
