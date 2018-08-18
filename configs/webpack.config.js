@@ -10,6 +10,9 @@ module.exports = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',
   devtool: 'inline-source-map',
   entry: getPath('./src/index.tsx'),
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+  },
   module: {
     rules: [
       {
